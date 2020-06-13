@@ -30,3 +30,11 @@ dotnet new webapi --auth non --no-https
   - `webBuilder.UseUrls("http://*:5000");`
 
 Press F5 to run the application locally
+
+From the terminal window
+
+```bash
+
+http localhost:5000/weatherforecast
+
+```
