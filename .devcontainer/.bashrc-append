@@ -1,0 +1,31 @@
+# add tools to path
+export PATH="$PATH:~/.dotnet/tools"
+
+# set dotnet root
+export DOTNET_ROOT=~/.dotnet
+
+# set prompt
+PS1='\[\033[01;30m\]\u@quickstart \[\033[01;34m\]\w/\[\033[00m\] $ '
+
+# aliases
+alias ls='ls --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias ipconfig='ip -4 a show eth0 | grep inet'
+
+# bash history
+HISTCONTROL=ignoreboth
+shopt -s histappend
+HISTSIZE=1000
+HISTFILESIZE=2000
+shopt -s checkwinsize
+
+# you can add project specific settings to this file and
+# they will be added for every user that clones the repo with Codespaces
+# including keys or secrets could be a SECURITY RISK
