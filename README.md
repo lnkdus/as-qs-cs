@@ -29,5 +29,4 @@ dotnet new webapi --auth non --no-https
 - Add the following line of code just before `webBuilder.UseStartup ...`
   - `webBuilder.UseUrls("http://*:5000");`
 
-Pres F5 to run the application locally
-
+Press F5 to run the application locally
