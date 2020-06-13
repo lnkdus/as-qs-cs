@@ -48,4 +48,4 @@ USER quickstart
 ### copy the app
 COPY --from=build /app .
 
-ENTRYPOINT [ "dotnet",  "as-qs-cs.dll" ]
+ENTRYPOINT [ "dotnet",  "quickstart.dll" ]

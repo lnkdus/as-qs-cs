@@ -3,8 +3,8 @@
 
   "settings": { "terminal.integrated.shell.linux": "/bin/bash" },
 
-	// Open port 4120 by default
-  "forwardPorts": [5100,5101],
+	// Open port 5000 by default
+  "forwardPorts": [5000],
 
   // Install extensions
   "extensions": [

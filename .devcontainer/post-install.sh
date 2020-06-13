@@ -23,6 +23,7 @@ date >> ~/status
 echo "Installing basics ..." >> ~/status
 
 sudo apt-get install -y --no-install-recommends apt-utils dialog
+sudo apt-get install -y --no-install-recommends curl git httpie
 
 DEBIAN_FRONTEND=dialog
 
@@ -35,14 +36,11 @@ export PATH="$PATH:~/.dotnet/tools"
 # set dotnet root
 export DOTNET_ROOT=~/.dotnet
 
-# set auth type
-export AUTH_TYPE=CLI
-
 # install WebV
 dotnet tool install -g webvalidate --version 1.0.7.3
 
 # run dotnet restore
-dotnet restore src/tests.sln
+dotnet restore src/app/quickstart.csproj
 
 date >> ~/status
 echo "Done" >> ~/status
